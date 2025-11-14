@@ -3,6 +3,12 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 from rdf_python_model_2 import RDFPositionError  # rename to match your file
 
+
+st.set_page_config(page_title="RDF Tool", page_icon="📡", layout="wide")
+
+st.image("assets/logo.png", width=180)
+
+
 st.set_page_config(page_title="RDF Position Error Tool", layout="wide")
 
 st.title("📡 RDF Position Error Interactive Web Tool")
@@ -75,4 +81,5 @@ with col2:
     ax.set_ylabel("Y (m)")
 
     st.pyplot(fig)
+
 
