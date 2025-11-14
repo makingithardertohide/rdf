@@ -13,7 +13,7 @@ st.title("📡 RDF Position Error Interactive Web Tool")
 
 # --- Sidebar controls ---
 st.sidebar.image("assets/logo.png", width=150)
-st.sidebar.markdown("[🏠 Home](https://your-homepage-url.com)")
+st.sidebar.markdown("[🏠 Home](https://commsaudit.com)")
 st.sidebar.header("Controls")
 
 s1_x = st.sidebar.slider("Sensor 1 X (km)", -50.0, 50.0, -5.0, 0.1) * 1000
@@ -81,6 +81,7 @@ with col2:
     ax.set_ylabel("Y (m)")
 
     st.pyplot(fig)
+
 
 
 
