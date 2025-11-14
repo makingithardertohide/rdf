@@ -4,31 +4,6 @@ from matplotlib.patches import Circle
 from rdf_python_model_2 import RDFPositionError  # rename to match your file
 
 
-st.markdown(
-    """
-    <div style="
-        display:flex;
-        justify-content: space-between;
-        align-items:center;
-        padding: 10px 20px;
-        background-color:#f5f5f5;
-        border-radius:8px;
-        margin-bottom: 20px;
-    ">
-        <div>
-            <img src="assets/logo.png" alt="Logo" style="height:60px;">
-        </div>
-
-        <div>
-            <a href="https://your-homepage-url.com" target="_blank" 
-               style="text-decoration:none; font-size:20px; font-weight:bold;">
-                🏠 Home
-            </a>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 
 
@@ -37,6 +12,8 @@ st.set_page_config(page_title="RDF Position Error Tool", layout="wide")
 st.title("📡 RDF Position Error Interactive Web Tool")
 
 # --- Sidebar controls ---
+st.sidebar.image("assets/logo.png", width=150)
+st.sidebar.markdown("[🏠 Home](https://your-homepage-url.com)")
 st.sidebar.header("Controls")
 
 s1_x = st.sidebar.slider("Sensor 1 X (km)", -50.0, 50.0, -5.0, 0.1) * 1000
@@ -104,6 +81,7 @@ with col2:
     ax.set_ylabel("Y (m)")
 
     st.pyplot(fig)
+
 
 
 
