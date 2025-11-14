@@ -10,12 +10,12 @@ st.title("📡 RDF Position Error Interactive Web Tool")
 # --- Sidebar controls ---
 st.sidebar.header("Controls")
 
-s1_x = st.sidebar.slider("Sensor 1 X (km)", -20.0, 20.0, -5.0, 0.1) * 1000
-s1_y = st.sidebar.slider("Sensor 1 Y (km)", -20.0, 20.0, 0.0, 0.1) * 1000
-s2_x = st.sidebar.slider("Sensor 2 X (km)", -20.0, 20.0, 5.0, 0.1) * 1000
-s2_y = st.sidebar.slider("Sensor 2 Y (km)", -20.0, 20.0, 0.0, 0.1) * 1000
-t_x = st.sidebar.slider("Target X (km)", -20.0, 20.0, 0.0, 0.1) * 1000
-t_y = st.sidebar.slider("Target Y (km)", 0.0, 30.0, 8.0, 0.1) * 1000
+s1_x = st.sidebar.slider("Sensor 1 X (km)", -50.0, 50.0, -5.0, 0.1) * 1000
+s1_y = st.sidebar.slider("Sensor 1 Y (km)", -50.0, 50.0, 0.0, 0.1) * 1000
+s2_x = st.sidebar.slider("Sensor 2 X (km)", -50.0, 50.0, 5.0, 0.1) * 1000
+s2_y = st.sidebar.slider("Sensor 2 Y (km)", -50.0, 50.0, 0.0, 0.1) * 1000
+t_x = st.sidebar.slider("Target X (km)", -50.0, 50.0, 0.0, 0.1) * 1000
+t_y = st.sidebar.slider("Target Y (km)", 0.0, 50.0, 8.0, 0.1) * 1000
 bearing_error = st.sidebar.slider("Bearing Error (deg)", 0.1, 10.0, 2.0, 0.1)
 
 # --- Compute model ---
@@ -75,3 +75,4 @@ with col2:
     ax.set_ylabel("Y (m)")
 
     st.pyplot(fig)
+
