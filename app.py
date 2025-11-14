@@ -15,7 +15,7 @@ st.title("📡 Direction Finding RMS accuracy and Sensor Geometry Calculator")
 st.sidebar.image("assets/logo.png", width=150)
 st.sidebar.markdown(
     """
-    <a href="https://your-homepage-url.com" target="_blank">
+    <a href="https://commsaudit.com" target="_blank">
         <img src="assets/logo.png" width="180">
     </a>
     """,
@@ -89,6 +89,7 @@ with col2:
     ax.set_ylabel("Y (m)")
 
     st.pyplot(fig)
+
 
 
 
